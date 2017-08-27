@@ -1,0 +1,6 @@
+PACKAGE = 'driver/tool/test'
+NOCORTO = true
+LANGUAGE = 'c'
+USE_PACKAGE = ['corto/argparse', 'driver/tool/build', 'corto/test']
+
+require "#{ENV['CORTO_BUILD']}/package"
