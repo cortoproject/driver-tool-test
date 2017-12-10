@@ -138,7 +138,7 @@ int16_t test_run(
 
         if (!strcmp(action, "test")) {
             if (testcase) {
-                if (corto_load("libtest.so", 2, (char*[]){
+                if (corto_use("libtest.so", 2, (char*[]){
                     "libtest.so",
                     testcase,
                     NULL}))
@@ -147,7 +147,7 @@ int16_t test_run(
                     goto error;
                 }
             } else {
-                if (corto_load("libtest.so", 1, (char*[]){
+                if (corto_use("libtest.so", 1, (char*[]){
                     "libtest.so",
                     NULL}))
                 {
