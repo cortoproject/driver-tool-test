@@ -1,0 +1,10 @@
+{
+    "id": "driver/tool/test",
+    "type": "package",
+    "value": {
+        "author": "Sander Mertens",
+        "description": "Test tool for corto projects",
+        "managed": false,
+        "use": ["corto", "corto/argparse", "corto/test"]
+    }
+}
