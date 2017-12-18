@@ -137,9 +137,11 @@ int16_t test_run(
         }
 
         if (!strcmp(action, "test")) {
+            char *testlib = corto_envparse(
+                "bin/%s-$BAKE_CONFIG/libtest.so", CORTO_PLATFORM_STRING);
             if (testcase) {
-                if (corto_use("libtest.so", 2, (char*[]){
-                    "libtest.so",
+                if (corto_use(testlib, 2, (char*[]){
+                    testlib,
                     testcase,
                     NULL}))
                 {
@@ -147,8 +149,8 @@ int16_t test_run(
                     goto error;
                 }
             } else {
-                if (corto_use("libtest.so", 1, (char*[]){
-                    "libtest.so",
+                if (corto_use(testlib, 1, (char*[]){
+                    testlib,
                     NULL}))
                 {
                     corto_throw(NULL);
