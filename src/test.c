@@ -21,7 +21,7 @@
  */
 
 #include <driver/tool/test/test.h>
-#include <corto/argparse/argparse.h>
+#include <corto/util/argparse/argparse.h>
 
 void cortotool_testHelp(void) {
     printf("Usage: corto test\n");
