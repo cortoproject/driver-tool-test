@@ -4,7 +4,6 @@
     "value": {
         "author": "Sander Mertens",
         "description": "Test tool for corto projects",
-        "managed": false,
-        "use": ["corto", "corto/util/argparse", "corto/test"]
+        "use": ["corto", "corto.util.argparse", "corto.test"]
     }
 }

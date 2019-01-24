@@ -2,7 +2,7 @@
 #ifndef TEST_H
 #define TEST_H
 
-/* Add include files here */
+#include "bake_config.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -15,4 +15,3 @@ extern "C" {
 #endif
 
 #endif /* TEST_H */
-
