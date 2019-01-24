@@ -131,7 +131,7 @@ int16_t test_run(
 
         if (!strcmp(action, "test")) {
             char *testlib = ut_envparse(
-                "bin/%s-$BAKE_CONFIG/libtest.so", UT_PLATFORM_STRING);
+                "bin/%s-$BAKE_CONFIG/libtest" UT_OS_LIB_EXT, UT_PLATFORM_STRING);
             if (testcase) {
                 if (ut_use(testlib, 2, (char*[]){
                     testlib,
